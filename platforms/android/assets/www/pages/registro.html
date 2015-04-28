@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <script type="text/javascript" charset="utf-8" src= "../cordova.js" ></script>
+        <script type="text/javascript" charset="utf-8" src= "../js/index.js" ></script>
+</head>
+<body>
+    <div data-role="header">
+        <h1>Camionetas</h1>
+    </div>
+
+    <div data-role="content">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+        <label for="tel">Telefono:</label>
+        <input type="tel" name="tel" id="tel" value="" placeholder="Telefono">
+
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo" placeholder="Correo">
+
+        <label for="des">Descripción:</label>
+        <textarea cols="40" rows="10" name="des" id="des">Descripción</textarea>
+
+        <div class="ui-field-contain">
+            <fieldset data-role="controlgroup">
+                <legend>Categoria:</legend>
+                <input type="radio" name="radio-choice-1" id="radio-choice-1a"  value="on" checked="checked">
+                <label for="radio-choice-1a">Vehiculo</label>
+
+                <input type="radio" name="radio-choice-1" id="radio-choice-1b"  value="on">
+                <label for="radio-choice-1b">Camioneta</label>
+
+                <input type="radio" name="radio-choice-1" id="radio-choice-1c"  value="on">
+                <label for="radio-choice-1c">Motocicleta</label>
+            </fieldset>                
+        </div>    
+        <button onclick="capturePhoto();">Capture Photo</button> <br>
+        <img style="width:100%;" id="miImagen" src="" />
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="../index.html" data-rel="back" data-icon="carat-l"></a></li>
+                <li><a href="contactos.html" data-icon="bars"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
